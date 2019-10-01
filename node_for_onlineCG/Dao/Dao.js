@@ -3,7 +3,6 @@ mongoose.connect('mongodb://localhost:27017/runoob', {useNewUrlParser: true, use
 const db = mongoose.connection;
 db.on('open', function (err) {
     if (err) throw err;
-    console.log('数据库连接成功')
 })
 
 
@@ -16,31 +15,18 @@ const UserSchema = new mongoose.Schema({
 const UserModel = db.model('user', UserSchema);
 
 
-async function  Add(user,password) {
-    const UserEntity = new UserModel({
-        user: user,
-        password : password
-    });
-    await Search(user)
-    // await UserEntity.save(function (error, doc) {
-    //     console.log('kkkkkkkkk')
-    //     if (error) {
-    //         console.log("error:" + error);
-    //     } else {
-    //         console.log(doc);
-    //     }
-    // })
-}
-Add('王',"123")
 async function Search(user){
     console.log(user);
     await  UserModel.find({}, function (err, docs) {
         console.log(docs);
     })
-    // await UserModel.remove({})
+}
+async function Clear(user){
+    await UserModel.remove({})
 }
 // Search()
 
+//Clear()  //!!!谨慎操作!!!
 
 
 db.on('error', function (err) {
