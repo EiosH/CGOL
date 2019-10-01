@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1705509",
+      "name": "气泡",
+      "font_class": "qipao",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "6673591",
+      "name": "主 气泡",
+      "font_class": "zhuqipao",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10351206",
+      "name": "男 女",
+      "font_class": "lunkuodasan-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "10351233",
+      "name": "男 女",
+      "font_class": "lunkuodasan-1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
